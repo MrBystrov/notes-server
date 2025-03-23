@@ -10,7 +10,7 @@ import { NotesModule } from './notes/notes.module';
 @Module({
   imports: [
     AuthModule,
-    MongooseModule.forRoot(process.env.MONGO_URI || ''),
+    MongooseModule.forRoot(process.env.DB_URI || ''),
     ConfigModule.forRoot({
       isGlobal: true,
     }),
