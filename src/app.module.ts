@@ -10,7 +10,9 @@ import { NotesModule } from './notes/notes.module';
 @Module({
   imports: [
     AuthModule,
-    MongooseModule.forRoot(process.env.DB_URI || ''),
+    MongooseModule.forRoot(
+      'mongodb+srv://sergeibystrov988:<db_password>@cluster0.yth7q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+    ),
     ConfigModule.forRoot({
       isGlobal: true,
     }),
