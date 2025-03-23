@@ -10,7 +10,7 @@ import { NotesModule } from './notes/notes.module';
 @Module({
   imports: [
     AuthModule,
-    MongooseModule.forRoot('mongodb://admin:admin@localhost:27017'),
+    MongooseModule.forRoot(process.env.MONGO_URI || ''),
     ConfigModule.forRoot({
       isGlobal: true,
     }),

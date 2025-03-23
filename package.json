@@ -31,7 +31,6 @@
     "@vendia/serverless-express": "^4.12.6",
     "@vercel/node": "^5.1.14",
     "argon2": "^0.41.1",
-    "aws-lambda": "^1.0.7",
     "cookie-parser": "^1.4.7",
     "mongoose": "^8.9.6",
     "nodemailer": "^6.10.0",
