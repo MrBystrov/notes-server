@@ -11,7 +11,7 @@ import { NotesModule } from './notes/notes.module';
   imports: [
     AuthModule,
     MongooseModule.forRoot(
-      'mongodb+srv://sergeibystrov988:<db_password>@cluster0.yth7q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+      'mongodb+srv://sergeibystrov988:G2rZbz9iHzEaHpvs@cluster0.yth7q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
     ),
     ConfigModule.forRoot({
       isGlobal: true,
