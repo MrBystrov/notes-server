@@ -23,7 +23,7 @@ export class AuthController {
 
     response.cookie('token', token, {
       maxAge: 24 * 60 * 60 * 1000,
-      sameSite: 'None', // Разрешить кросс-доменные запросы
+      sameSite: 'none', // Разрешить кросс-доменные запросы
       secure: true,
     });
 
