@@ -9,6 +9,7 @@ async function bootstrap() {
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     allowedHeaders: 'Content-Type, Authorization',
     credentials: true,
+    domain: 'onrender.com',
   });
 
   await app.listen(process.env.PORT ?? 4000);
