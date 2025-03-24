@@ -25,6 +25,7 @@ export class AuthController {
       maxAge: 24 * 60 * 60 * 1000,
       sameSite: 'none', // Разрешить кросс-доменные запросы
       secure: true,
+      httpOnly: false,
       path: '/',
     });
 
