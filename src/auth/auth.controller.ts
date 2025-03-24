@@ -21,14 +21,6 @@ export class AuthController {
       data.password,
     );
 
-    // response.cookie('token', token, {
-    //   maxAge: 24 * 60 * 60 * 1000,
-    //   sameSite: 'none', // Разрешить кросс-доменные запросы
-    //   secure: true,
-    //   httpOnly: false,
-    //   path: '/',
-    // });
-
     return response.status(200).json({ user, token });
   }
 
